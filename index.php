@@ -33,7 +33,6 @@
                     <li><a href="#">Online Multiplayer (Coming Soon!)</a></li>
                 </ol>
             </p>
-            <p style="text-align: center;"> Please note this game is still in development. <a href="updateLog.php">View Update Log</a></p>
         </main>
     </body>
 </html>

@@ -55,7 +55,6 @@
                     </tr>
                 </table>
             </div>
-            <p style="text-align: center;">Please note this game is still in development. <a href="updateLog.php">View Update Log</a></p>
         </main>
         <div id="notificationOuterBox">
             <div id="notificationInnerBox">
