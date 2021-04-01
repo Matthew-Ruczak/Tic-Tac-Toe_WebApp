@@ -1,13 +1,3 @@
-/**
- *                      Tic Tac Toe Online
- * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- * 
- * 
- * 
- * 
- * 
- */
-
 //          *** Start of Fields ***
 let playersTurn = 0;    //Holds who turn it is (Player 1 = 1, Player 2 = 2)
 let numberOfTurnsCompleted = 0;

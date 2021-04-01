@@ -1,13 +1,3 @@
-/**
- *                      Tic Tac Toe Online
- * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- * 
- * 
- * 
- * 
- * 
- */
-
 //          *** Start of Fields *** 
 let playerOneScore = 0;
 let playerTwoScore = 0;
