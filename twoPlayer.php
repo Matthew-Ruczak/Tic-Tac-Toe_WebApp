@@ -1,22 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- Just remember, the order that JS and CSS is loaded matters! -->
         <!-- Meta Data -->
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- This tells the browser not to zoom out (this is done by scaling to the device) (important for mobile)-->
 
-        <!-- This is where you put the title of your current page-->
         <title>Tic Tac Toe Online | Two Player</title>
 
-        <!-- External CSS -->
         <link rel="stylesheet" type="text/css" href="css/main.css">
 
-        <!-- Internal CSS-->
         <style>
         </style>
-
-        <!-- Internal JavaScript -->
         <script>
         </script>
     </head>
