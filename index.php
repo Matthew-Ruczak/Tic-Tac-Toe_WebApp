@@ -6,9 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- This tells the browser not to zoom out (this is done by scaling to the device) (important for mobile)-->
 
         <title>Tic Tac Toe Online | Home</title>
-
-        <script>
-        </script>
     </head>
     <body>
         <main>

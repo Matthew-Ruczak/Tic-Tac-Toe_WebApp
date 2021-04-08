@@ -8,8 +8,6 @@
         <title>Tic Tac Toe Online | Single Player</title>
 
         <link rel="stylesheet" type="text/css" href="css/main.css">
-        <script>
-        </script>
     </head>
     <body>
         <main>
