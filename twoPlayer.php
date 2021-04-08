@@ -9,8 +9,6 @@
 
         <link rel="stylesheet" type="text/css" href="css/main.css">
 
-        <style>
-        </style>
         <script>
         </script>
     </head>

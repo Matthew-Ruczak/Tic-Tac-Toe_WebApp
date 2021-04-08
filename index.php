@@ -7,9 +7,6 @@
 
         <title>Tic Tac Toe Online | Home</title>
 
-        <style>
-        </style>
-
         <script>
         </script>
     </head>
