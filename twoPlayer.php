@@ -27,17 +27,17 @@
                     </li>
                 </ul>
                 <table id="ticTacToeSquaresArea">
-                    <tr style="width: 100%; height: 15%;">
+                    <tr class="ticTacToeSquareRows">
                         <td id="square_0-0" class="ticTacToeSquares"></td>
                         <td id="square_1-0"class="ticTacToeSquares"></td>
                         <td id="square_2-0" class="ticTacToeSquares"></td>
                     </tr>
-                    <tr>
+                    <tr class="ticTacToeSquareRows">
                         <td id="square_0-1" class="ticTacToeSquares"></td>
                         <td id="square_1-1"class="ticTacToeSquares"></td>
                         <td id="square_2-1" class="ticTacToeSquares"></td>
                     </tr>
-                    <tr>
+                    <tr class="ticTacToeSquareRows">
                         <td id="square_0-2" class="ticTacToeSquares"></td>
                         <td id="square_1-2"class="ticTacToeSquares"></td>
                         <td id="square_2-2" class="ticTacToeSquares"></td>
