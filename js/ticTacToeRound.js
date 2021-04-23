@@ -1,4 +1,4 @@
-class TicTacToeGame {
+class TicTacToeRound {
 
     ticTacToeBoard; //Tic Tac Toe Board
     numOfEmptySquares;   //Total number of empty squares on the board
