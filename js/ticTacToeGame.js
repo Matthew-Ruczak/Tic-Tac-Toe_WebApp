@@ -4,6 +4,12 @@ const playerTwoScoreElement = $('#playerTwoScore'); //Holding reference to the G
 const notificationOuterBox = $('#notificationOuterBox');
 const notificationMessage = $('#notificationMessage');
 const ticTacToeSquareElements = $(".ticTacToeSquares"); //Getting reference to all tic tac toe squares
+//Making it so each square is clickable
+ticTacToeSquareRef.on('click', onTicTacToeSquareClick);
+
+function onTicTacToeSquareClick(){
+    //Handle when square is clicked
+}
 
 class TicTacToeGame{
     playerOneScore;
