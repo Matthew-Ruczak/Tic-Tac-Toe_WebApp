@@ -13,6 +13,7 @@ class TicTacToeGame{
     constructor(){
         playerOneScore = 0;
         playerTwoScore = 0;
+        currTicTacToeRound = 1;
         //Making it so each square is clickable
         ticTacToeSquareRef.on('click', onTicTacToeSquareClick);
         currTicTacToeRound = startNewTicTacToeRound();
