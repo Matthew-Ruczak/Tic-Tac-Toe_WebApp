@@ -21,37 +21,14 @@ $(function(){
     //Making it so the user can click on the squares by setting up the on click event listener
     ticTacToeSquareRef = $(".ticTacToeSquares");
     ticTacToeSquareRef.on('click', function(){
-        //Checking if the square is blank (It has not already been used)
-        let squareClickedID = $(this).get(0).id;
-        console.log(squareClickedID);
+        //Getting the square that was clicked ID
+        let squareClickedID = $(this).attr('id');
+        //Getting the square position that was clicked
         let squareClicked_posX = squareClickedID.split('_')[1].split('-')[0];
         let squareClicked_posY = squareClickedID.split('_')[1].split('-')[1];
 
-        let symbolToPlace = ticTacToeGame.getPlayersTurn() == 1 ? "X" : "O";
-        if (ticTacToeGame.placeAt(squareClicked_posX, squareClicked_posY)){
-            //Displaying Players Turn on GUI
-            console.log("Two: " + ticTacToeGame.getPlayersTurn());
-            $(this).html(symbolToPlace);
-            
-            updatePlayersTurnGUI();
+        if (ticTacToeGame.onTicTacToeSquareClick(squareClicked_posX, squareClicked_posY)){
 
-            //Checking for a Winner or if it is a Draw
-            let checkForWinnerResult = ticTacToeGame.checkForWinner();
-            if (checkForWinnerResult){
-                let message;
-                if (checkForWinnerResult === "X"){
-                    message = "Player 1 Won! Restarting Game.";
-                    playerOneScore++;
-                }else if (checkForWinnerResult === "O"){
-                    message = "Player 2 Won! Restarting Game.";
-                    playerTwoScore++;
-                }else if (checkForWinnerResult === "D"){
-                    message = "It's a Draw! Restarting Game."
-                }
-                openNotificationBox(message);
-
-                startNewRound();
-            }
         }else{
             alert("This square has already been played!");
         }        
