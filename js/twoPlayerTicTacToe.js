@@ -7,7 +7,6 @@ let playerTwoScoreElement = $('#playerTwoScore'); //Holding reference to the GUI
 let notificationOuterBox = $('#notificationOuterBox');
 let notificationMessage = $('#notificationMessage');
 let ticTacToeSquareRef; //Holds reference to all of the tic tac toe squares from JQuery
-let ticTacToeAreaGridRef;   //Holds reference to all of the tic tac toe squares in a 2D array
 let ticTacToeGame; //Instance of the TicTacToeGame Class
 //          *** End of Fields ***
 
@@ -17,12 +16,6 @@ let ticTacToeGame; //Instance of the TicTacToeGame Class
  * Runs once the page is finished loading
  */
 $(function(){
-    //Getting reference to all ticTacToe Squares
-    ticTacToeAreaGridRef = [
-        [$("#square_0-0"),$("#square_1-0"), $("#square_2-0")],
-        [$("#square_0-1"), $("#square_1-1"), $("#square_2-1")],
-        [$("#square_0-2"), $("#square_1-2"), $("#square_2-2")]
-    ];
     //Creating an a Tic Tac Toe Game
     ticTacToeGame = new TicTacToeGame();
     //Making it so the user can click on the squares by setting up the on click event listener
