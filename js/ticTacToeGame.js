@@ -5,7 +5,7 @@ const notificationOuterBox = $('#notificationOuterBox');
 const notificationMessage = $('#notificationMessage');
 const ticTacToeSquareElements = $(".ticTacToeSquares"); //Getting reference to all tic tac toe squares
 
-class TicTacToeGame{
+export class TicTacToeGame{
     playerOneScore;
     playerTwoScore;
     currTicTacToeRound;
@@ -13,9 +13,6 @@ class TicTacToeGame{
     constructor(){
         playerOneScore = 0;
         playerTwoScore = 0;
-        currTicTacToeRound = 1;
-        //Making it so each square is clickable
-        ticTacToeSquareRef.on('click', onTicTacToeSquareClick);
         currTicTacToeRound = startNewTicTacToeRound();
     }
 
@@ -23,7 +20,11 @@ class TicTacToeGame{
         currTicTacToeRound = new TicTacToeRound();
     }
 
-    onTicTacToeSquareClick(){
+    onTicTacToeSquareClick(x,y){
         //Handle when square is clicked
+    }
+
+    get PlayersTurn(){
+        this.currTicTacToeRound.getPlayersTurn();
     }
 }
