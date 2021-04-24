@@ -44,20 +44,10 @@ $(function(){
     updatePlayersTurnGUI();
 });
 
-function startNewRound(){
-    updatePlayersScoreGUI();
-    clearAllTicTacToeSquaresGUI();
-    ticTacToeGame.restartRound();
-}
-
 function restartGame(){
-    //Clearing players scores
-    playerOneScore = 0;
-    playerTwoScore = 0;
-    updatePlayersScoreGUI();
-    clearAllTicTacToeSquaresGUI();
-
     ticTacToeGame = new TicTacToeGame();
+    clearAllTicTacToeSquaresGUI();
+    updatePlayersScoreGUI();
     updatePlayersTurnGUI();
 }
 
