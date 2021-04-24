@@ -21,7 +21,7 @@ export class TicTacToeGame{
     }
 
     onTicTacToeSquareClick(x,y){
-        //Handle when square is clicked
+        this.currTicTacToeRound.placeAt(x,y);
     }
 
     get PlayersTurn(){
