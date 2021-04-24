@@ -1,6 +1,4 @@
 //          *** Start of Fields *** 
-let playerOneScore = 0;
-let playerTwoScore = 0;
 let playersTurnElement = $("#playersTurn"); //Holding reference to the GUI text to show who's turn it is
 let playerOneScoreElement = $('#playerOneScore'); //Holding reference to the GUI text for player 1's score
 let playerTwoScoreElement = $('#playerTwoScore'); //Holding reference to the GUI text for player 2's score
