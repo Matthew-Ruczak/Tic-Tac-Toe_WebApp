@@ -85,11 +85,11 @@ class TicTacToeGame {
                 return this.ticTacToeBoard[x][0];
         }
         //Checking diagonally (Top Left to Bottom Right)
-        if (this.ticTacToeBoard[0,0] === this.ticTacToeBoard[1,1] && this.ticTacToeBoard[0,0] === this.ticTacToeBoard[2,2])
-            return this.ticTacToeBoard[0,0];
+        if (this.ticTacToeBoard[0][0] === this.ticTacToeBoard[1][1] && this.ticTacToeBoard[0][0] === this.ticTacToeBoard[2][2])
+            return this.ticTacToeBoard[0][0];
         //Checking diagonally (Bottom Left to Top Right)
-        if (this.ticTacToeBoard[2,2] === this.ticTacToeBoard[1,1] && this.ticTacToeBoard[2,2] === this.ticTacToeBoard[2,0])
-            return this.ticTacToeBoard[2,2];
+        if (this.ticTacToeBoard[0][2] === this.ticTacToeBoard[1][1] && this.ticTacToeBoard[0][2] === this.ticTacToeBoard[2][0])
+            return this.ticTacToeBoard[0][2];
         //Checking if the game is a Draw
         if (this.numberOfEmptySquares <= 0){
             return "D";
