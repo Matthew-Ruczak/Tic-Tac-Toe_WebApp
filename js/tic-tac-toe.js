@@ -1,4 +1,4 @@
-class TicTacToe {
+export class TicTacToe {
     ticTacToeGameBoard; //Holds the current Tic Tac Toe Board
     numOfTurnsCompleted; //Hold's the number of Turns Completed
     playerTurn; //Holds which players turn it is (Either 1 or 2)
