@@ -14,19 +14,19 @@
         </ul>
         <table id="ticTacToeSquaresArea">
             <tr class="ticTacToeSquareRows">
-                <td id="square_0-0" class="ticTacToeSquares"></td>
-                <td id="square_1-0"class="ticTacToeSquares"></td>
-                <td id="square_2-0" class="ticTacToeSquares"></td>
+                <td id="square_0-0" data-pos-x="0" data-pos-y="0" class="ticTacToeSquares"></td>
+                <td id="square_1-0" data-pos-x="1" data-pos-y="0" class="ticTacToeSquares"></td>
+                <td id="square_2-0" data-pos-x="2" data-pos-y="0" class="ticTacToeSquares"></td>
             </tr>
             <tr class="ticTacToeSquareRows">
-                <td id="square_0-1" class="ticTacToeSquares"></td>
-                <td id="square_1-1"class="ticTacToeSquares"></td>
-                <td id="square_2-1" class="ticTacToeSquares"></td>
+                <td id="square_0-1" data-pos-x="0" data-pos-y="1" class="ticTacToeSquares"></td>
+                <td id="square_1-1" data-pos-x="1" data-pos-y="1" class="ticTacToeSquares"></td>
+                <td id="square_2-1" data-pos-x="2" data-pos-y="1" class="ticTacToeSquares"></td>
             </tr>
             <tr class="ticTacToeSquareRows">
-                <td id="square_0-2" class="ticTacToeSquares"></td>
-                <td id="square_1-2"class="ticTacToeSquares"></td>
-                <td id="square_2-2" class="ticTacToeSquares"></td>
+                <td id="square_0-2" data-pos-x="0" data-pos-y="2" class="ticTacToeSquares"></td>
+                <td id="square_1-2" data-pos-x="1" data-pos-y="2" class="ticTacToeSquares"></td>
+                <td id="square_2-2" data-pos-x="2" data-pos-y="2" class="ticTacToeSquares"></td>
             </tr>
         </table>
     </div>
