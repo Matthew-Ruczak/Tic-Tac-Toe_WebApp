@@ -10,7 +10,7 @@ export class TicTacToe {
             [null, null, null],
             [null, null, null]
         ];
-        this.playerTurn = startingPlayer;
+        this.playerTurn = this.getStartingPlayer();
         this.numOfTurnsCompleted = 0;
     }
 
@@ -55,21 +55,21 @@ export class TicTacToe {
     }
 
     //Returns the Starting Player
-    get startingPlayer(){
+    getStartingPlayer(){
         return Math.floor(Math.random() * 2) + 1;
     }
 
     //Returns the Current Players Turn
     get currPlayerTurn(){
-        return playerTurn;
+        return this.playerTurn;
     }
 
     //Switchs who turn it is
     switchPlayersTurn(){
         if (this.currPlayerTurn === 1)
-            playerTurn = 2;
+            this.playerTurn = 2;
         else
-            playerTurn = 1;
+            this.playerTurn = 1;
     }
 
     isGameOver(){
