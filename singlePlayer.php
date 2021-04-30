@@ -20,6 +20,6 @@
         </script>
         <!-- External JavaScript -->
         <script src="js/jQuery.js"></script>    <!-- JQuery Library-->
-        <script src="js/game.js"></script>
+        <script src="js/game.js" type="module"></script>
     </body>
 </html>
