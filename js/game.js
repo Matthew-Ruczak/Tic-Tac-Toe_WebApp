@@ -55,14 +55,18 @@ function onTicTacToeSquareClick(){
         //Checking if the game is over
         if (result === 1){
             openNotificationBox("Player 1 Win's this Round!");
+            playerOneScore++;
             startNewTicTacToeRound();
         }
         else if (result === 2){
             openNotificationBox("Player 2 Win's this Round!");
+            playerTwoScore++;
             startNewTicTacToeRound();
         }
         else if (result === "D"){
             openNotificationBox("This Round is a Draw!");
+            playerOneScore++;
+            playerTwoScore++;
             startNewTicTacToeRound();
         }
         updateHTMLGUI();
