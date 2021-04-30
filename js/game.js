@@ -50,7 +50,7 @@ function onTicTacToeSquareClick(){
     let result = currTicTacToeRound.placeAt(parseInt($(this).attr('data-pos-x')), parseInt($(this).attr('data-pos-y')));
     if (result){
         //Updating HTML Square with the Players Symbol
-        $(this).html(currTicTacToeRound.currPlayerTurn === 1 ? 'X' : 'O');
+        $(this).html(currTicTacToeRound.currPlayerTurn === 1 ? 'O' : 'X');
         
         //Checking if the game is over
         if (result === 1){
