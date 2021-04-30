@@ -73,6 +73,17 @@ export class TicTacToe {
             this.playerTurn = 1;
     }
 
+    get emptySquares(){
+        let listOfEmptySquares = [];
+        for (let x = 0; x < 3; x++){
+            for (let y = 0; y < 3; y++){
+                if (this.ticTacToeGameBoard[x][y] === null)
+                    listOfEmptySquares.push({pos_x: x, pos_y: y});
+            }
+        }
+        return listOfEmptySquares
+    }
+
     isGameOver(){
         //Checking if a player has won Horizontally
         for (let y = 0; y < 3; y++){
