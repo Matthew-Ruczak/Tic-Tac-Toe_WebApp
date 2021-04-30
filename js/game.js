@@ -23,6 +23,10 @@ allSquareElementRef.on('click', onTicTacToeSquareClick);
 //Starting the Tic Tac Toe Game
 startNewTicTacToeRound();
 
+//Checking if it is the computers turn
+checkIfComputersTurn();
+
+
 function startNewTicTacToeRound(){
     currTicTacToeRound = new TicTacToe();
     //Clearing all Square HTML Elements
@@ -37,7 +41,8 @@ function restartGame(){
     currTicTacToeRound = new TicTacToe();
     //Clearing all Square HTML Elements
     allSquareElementRef.html('');
-    updateHTMLGUI()
+    checkIfComputersTurn();
+    updateHTMLGUI();
 }
 
 function updateHTMLGUI(){
@@ -70,10 +75,25 @@ function onTicTacToeSquareClick(){
             startNewTicTacToeRound();
         }
         updateHTMLGUI();
+        //Checking if it is the computers turn
+        checkIfComputersTurn();
     }
     else{
         openNotificationBox("This square has been played!");
     }
+}
+
+//Checking if this is a single Player Game & if it is the computers turn
+function checkIfComputersTurn(){
+    if (gameMode === 0 && currTicTacToeRound.currPlayerTurn === 2)
+    computerTurn();
+}
+
+function computerTurn(){
+    let currentEmptySquares = currTicTacToeRound.emptySquares;
+    //Randomly Selecting a Square & Clicking it
+    let squareToSelectIndex = Math.round(Math.random() * (currentEmptySquares.length - 1));
+    $('#square_' + currentEmptySquares[squareToSelectIndex].pos_x + '-' + currentEmptySquares[squareToSelectIndex].pos_y).trigger( "click" );
 }
 
 function openNotificationBox(message){
