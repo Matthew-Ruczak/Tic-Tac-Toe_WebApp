@@ -32,8 +32,7 @@ export class TicTacToe {
             False, if the symbol could not be place (Spot has already has a non-null value)
             1, if player 1 Won the game
             2, if player 2 Won the game
-            "D", if the Game is a Draw
-            
+            "D", if the Game is a Draw  
     */
     placeAt(x, y){
         //Checking if the if the spot already has a value
