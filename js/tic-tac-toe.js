@@ -46,6 +46,7 @@ export class TicTacToe {
             let result = this.isGameOver()
             if (!result){
                 this.switchPlayersTurn();
+                result = !result;   //Returning true so the game will continue
             }
             return result;
         }
