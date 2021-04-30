@@ -47,7 +47,7 @@ function updateHTMLGUI(){
 }
 
 function onTicTacToeSquareClick(){
-    let result = this.currTicTacToeRound.placeAt($(this).attr('data-pos-x'), $(this).attr('data-pos-y'));
+    let result = currTicTacToeRound.placeAt(parseInt($(this).attr('data-pos-x')), parseInt($(this).attr('data-pos-y')));
     if (result){
         //Updating HTML Square with the Players Symbol
         $(this).html(currTicTacToeRound.currPlayerTurn === 1 ? 'X' : 'O');
