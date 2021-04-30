@@ -14,8 +14,12 @@
             <?php include 'header.php'; ?>
             <?php include 'gameArea.php'; ?>
         </main>
+        <!-- Internal JS -->
+        <script>
+            var gameMode = 0;
+        </script>
         <!-- External JavaScript -->
         <script src="js/jQuery.js"></script>    <!-- JQuery Library-->
-        <script src="js/singlePlayerTicTacToe.js"></script>
+        <script src="js/game.js"></script>
     </body>
 </html>
