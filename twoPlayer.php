@@ -1,70 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- Just remember, the order that JS and CSS is loaded matters! -->
         <!-- Meta Data -->
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- This tells the browser not to zoom out (this is done by scaling to the device) (important for mobile)-->
 
-        <!-- This is where you put the title of your current page-->
         <title>Tic Tac Toe Online | Two Player</title>
 
-        <!-- External CSS -->
         <link rel="stylesheet" type="text/css" href="css/main.css">
-
-        <!-- Internal CSS-->
-        <style>
-        </style>
-
-        <!-- Internal JavaScript -->
-        <script>
-        </script>
     </head>
     <body>
         <main>
             <?php include 'header.php'; ?>
-            <div id="playArea">
-                <ul id="gameInfoArea">
-                    <li class="gameInfoAreaElement">
-                        <strong>Score</strong> <br>
-                        <span>Player 1:<span id="playerOneScore">0</span></span>&nbsp;&nbsp;<span>Player 2:<span id="playerTwoScore">0</span></span>
-                    </li>
-                    <li class="gameInfoAreaElement">
-                        <strong>Player 1 = X, Player 2 = O</strong><br>
-                        It is Player <span id="playersTurn"></span>'s turn.
-                    </li>
-                    <li class="gameInfoAreaElement">
-                        <button id="restartGameBtn" class="btn btn-dark">Restart Game</button>
-                    </li>
-                </ul>
-                <table id="ticTacToeSquaresArea">
-                    <tr style="width: 100%; height: 15%;">
-                        <td id="square_0-0" class="ticTacToeSquares"></td>
-                        <td id="square_1-0"class="ticTacToeSquares"></td>
-                        <td id="square_2-0" class="ticTacToeSquares"></td>
-                    </tr>
-                    <tr>
-                        <td id="square_0-1" class="ticTacToeSquares"></td>
-                        <td id="square_1-1"class="ticTacToeSquares"></td>
-                        <td id="square_2-1" class="ticTacToeSquares"></td>
-                    </tr>
-                    <tr>
-                        <td id="square_0-2" class="ticTacToeSquares"></td>
-                        <td id="square_1-2"class="ticTacToeSquares"></td>
-                        <td id="square_2-2" class="ticTacToeSquares"></td>
-                    </tr>
-                </table>
-            </div>
+            <?php include 'gameArea.php'; ?>
         </main>
-        <div id="notificationOuterBox">
-            <div id="notificationInnerBox">
-                <span id="notificationMessage"></span> <br>
-                <button id="closeNotificationBox" class="btn btn-dark">Close</button>
-            </div>
-        </div>
+         <!-- Internal JS -->
+         <script>
+            var gameMode = 1;
+        </script>
         <!-- External JavaScript -->
         <script src="js/jQuery.js"></script>    <!-- JQuery Library-->
-        <script src="js/ticTacToeGame.js"></script>
-        <script src="js/twoPlayerTicTacToe.js"></script>
+        <script src="js/game.js" type="module"></script>
     </body>
 </html>
