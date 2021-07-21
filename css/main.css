@@ -24,6 +24,8 @@ main {
     margin-right: auto;
 }
 #ticTacToeSquaresArea_table {
+    margin-left: auto;
+    margin-right: auto;
     table-layout: fixed;
     border: 2px solid black;
     
@@ -74,7 +76,7 @@ main {
 }
 #notificationInnerBox {
     width: 40%;
-    margin-top: 15%;
+    margin-top: 45%;
     margin-left: auto;
     margin-right: auto;
     padding: 2%;
